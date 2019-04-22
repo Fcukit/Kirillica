@@ -1,11 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "kirillica/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "kirillica"
-  spec.version       = Kirillica::VERSION
+  spec.version       = '0.1.1'
   spec.authors       = ["Vlasov Viktor"]
   spec.email         = ["vlasv90@gmail.com"]
 

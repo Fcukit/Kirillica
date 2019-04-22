@@ -1,4 +1,3 @@
-require "kirillica/version"
 require "kirillica/gost_2000"
 require "kirillica/usa_government"
 require "kirillica/iso_9"
