@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Implement different standarts of kirillica transliteration"
   spec.homepage      = "https://github.com/Fcukit/kirillica"
   spec.license       = "MIT"
-  spec.files = ["lib/kirillica.rb", "lib/kirillica/gost_2000.rb", "lib/kirillica/usa_government.rb", "lib/kirillica/iso_9.rb"]
+  spec.files = ["lib/kirillica.rb", "lib/kirillica/gost_2000.rb", "lib/kirillica/usa_government.rb", "lib/kirillica/iso_9.rb", "lib/kirillica/passport.rb"]
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
