@@ -5,6 +5,7 @@ This gem make transliteration from kirillica symbols. Now is available a few mod
 * GOST 7.79-2000
 * ISO 9 - 1995
 * USA Government
+* International passport
 
 ## Русский
 
@@ -13,6 +14,7 @@ This gem make transliteration from kirillica symbols. Now is available a few mod
 * ГОСТ 7.79 - 2000
 * ISO 9 -1995
 * Транслитерации Госдепартамента США
+* Транслитерация имен для загранпаспорта РФ
 
 ## Installation
 
@@ -33,13 +35,17 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Kirillica.translit('Ёлки', :usa_government)
-=> "yelki"
-Kirillica.translit('Ёлки', :iso_9)
-=> "ёlki"
-Kirillica.translit('Ёлки', :gost_2000)
-=> "yolki"
+Kirillica.translit('Ёлкина Снежана Вячеславовна', :usa_government)
+=> "yelkina snezhana vyacheslavovna"
 
+Kirillica.translit('Ёлкина Снежана Вячеславовна', :iso_9)
+=> "ёlkina snežana vâčeslavovna"
+
+Kirillica.translit('Ёлкина Снежана Вячеславовна', :gost_2000)
+=> "yolkina snezhana vyacheslavovna"
+
+Kirillica.translit('Ёлкина Снежана Вячеславовна', :passport)
+=> "elkina snezhana vyacheslavovna"
 ```
 
 ## Development
