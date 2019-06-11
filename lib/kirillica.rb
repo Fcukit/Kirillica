@@ -18,6 +18,8 @@ module Kirillica
       UsaGovernment.translit(phrase)
     when :iso_9
       ISO_9.translit(phrase)
+    when :passport
+      Passport.translit(phrase)
     end
   end
 

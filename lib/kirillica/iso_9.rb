@@ -39,7 +39,8 @@ module Kirillica
     WINDOW = 1
 
     # transliteration
-    def self.translit(phrase)
+    def self.translit(phrase='')
+      return '' if phrase.empty?
       translitted_phrase = ''
 
       phrase.each_char do |char|

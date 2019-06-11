@@ -50,10 +50,11 @@ module Kirillica
     WINDOW = 3
 
     # transliteration
-    def self.translit(phrase)
+    def self.translit(phrase='')
+      return '' if phrase.empty?
       translitted_phrase = ''
 
-      chars = phrase.chars
+      chars = phrase.downcase.chars
 
       while chars.any?
         window = 2
